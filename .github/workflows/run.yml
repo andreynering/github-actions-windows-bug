@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Build
-        run: go build -o ./main -v ./main
+        run: go build -o ./main -v ./main.go
 
       - name: Test
         run: ./main
@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Build
-        run: go build -o ./main -v ./main
+        run: go build -o ./main -v ./main.go
 
       - name: Test
         run: ./main
